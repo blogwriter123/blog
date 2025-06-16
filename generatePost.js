@@ -30,7 +30,7 @@ Rules:
       {
         model: 'gemini-1.5-flash',
         messages: [{ role: 'user', content: prompt }],
-        max_tokens: 4000,
+        max_tokens: 6000,
         temperature: 0.7,
       },
       {
