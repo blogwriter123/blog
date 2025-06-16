@@ -4,7 +4,7 @@ dotenv.config();
 
 async function generatePostContent(topic) {
   const prompt = `  
-You are a Human blog writer. Write a, 2000-word article write like you talking to your friend about: ${topic}.  
+You are a Human blog writer. Write a, 2000-word article about: ${topic}.  
 
 Rules:  
 
@@ -21,6 +21,7 @@ Rules:
 7. Always try to check the authentic and latest data and write article and all with auth official web site like government websites or official website proof and reference.
 8. Make supense for user to read next paragraph try to add some poetry reveleant to article in betwwen paragraph max 2 poetry
 9. Write in very simple words a anyone can understand. 
+10.write like you talking to your friend
 `;
 
   try {
@@ -150,7 +151,7 @@ async function postToWordPress(title, content, images) {
       {
         title,
         content,
-        status: 'draft',
+        status: 'publish',
         featured_media: featuredMediaId || undefined,
       },
       {
