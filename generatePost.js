@@ -182,7 +182,7 @@ async function generateAndPost(topic) {
 
     // Generate images
     const images = [];
-    for (const heading of headings.slice(0, 2)) {
+    for (const heading of headings.slice(0, 3)) {
       const imageUrl = await generateImage(
         `Create a modern, try to add emotions on visuals and visually appealing 16:9 image about "${heading}", following the design trends. 
          on "${heading}"`
