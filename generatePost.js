@@ -4,7 +4,7 @@ dotenv.config();
 
 async function generatePostContent(topic) {
   const prompt = `  
-You are a Human blog writer. Write a, approx 2000-word article write like you talking to your friend about: ${topic}.  
+You are a Human blog writer. Write a, 2000-word article write like you talking to your friend about: ${topic}.  
 
 Rules:  
 
@@ -17,10 +17,10 @@ Rules:
 4. Internal Links: Add links like [/top-ai-tools](#) or [/gemini-vs-chatgpt](#).  
 5. FAQs: Add 2-3 simple questions at the end (e.g., "Is AI safe?").  
 6. Conclusion: End with a short, clear summary approx 100 words.  
-7. Write a 1500-word article
-8. Always try to check the authentic and latest data and write article and all with auth official web site like government websites or official website proof and reference.
-9. Make supense for user to read next paragraph try to add some poetry reveleant to article in betwwen paragraph max 2 poetry
-10. Write in very simple words a anyone can understand. 
+
+7. Always try to check the authentic and latest data and write article and all with auth official web site like government websites or official website proof and reference.
+8. Make supense for user to read next paragraph try to add some poetry reveleant to article in betwwen paragraph max 2 poetry
+9. Write in very simple words a anyone can understand. 
 `;
 
   try {
